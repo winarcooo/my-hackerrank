@@ -1,15 +1,15 @@
 function stairCase(n) {
 
-    var m = n-1
-    for(i = 0; i <= n; i++) {
-
-        while(m > 0) {
-            process.stdout.write('#')
-            m--
+    // print height of stair
+    for(i = 1; i <= n; i++) {
+        // print space in each line
+        for(j = n-i; j > 0; j--){
+            process.stdout.write(' ')
         }
 
-        for(j = 0; j <= i; j++) {
-            process.stdout.write('*')
+        // print star in each line
+        for(j = 1; j <= i; j++) {
+            process.stdout.write('#')
         }
         process.stdout.write('\n')
     }
