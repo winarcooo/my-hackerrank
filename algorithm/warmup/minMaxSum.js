@@ -4,8 +4,6 @@ function minMaxSum(arr) {
     function add(accumulator, a) {
         return accumulator + a
     }
-    var min = 0;
-    var max = 0;
     min = sum - Math.max(...arr)
     max = sum - Math.min(...arr)
 

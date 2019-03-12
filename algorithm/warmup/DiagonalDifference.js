@@ -6,7 +6,7 @@ function diagonalDifference(arr) {
     var n = arr.length
     do {
         ld += arr[i][i]
-        rd += arr[i][n - i - 1]
+        rd += arr[i][n-i-1]
         i++
     }
     while (i < n);
