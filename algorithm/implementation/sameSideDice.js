@@ -10,15 +10,6 @@ const diceDictionary = {
     33:0 ,44:0 ,55:0 ,66:0
 }
 
-function sameSideDice(dices) {
-    // ada angka yg sama apa enggak ?
-    var duplicate = findSameNumber(dices)
-    // if (duplicate != 0) {
-
-    // }
-    return typeof duplicate
-}
-
 function findSameNumber(dices) {
     var uniq = dices
         .map((dice) => { return { count: 1, dice: dice }})
@@ -36,6 +27,24 @@ function countStep(from, to) {
     return diceDictionary[from + '' + to]
 }
 
-var diceSide = [1,3,3]
+function sameSideDice(dices) {
+    var counter = 0;
+    // ada angka yg sama apa enggak ?
+    var duplicate = findSameNumber(dices)
+
+    if (duplicate != 0) {
+        // ini kondisi kalo ada angka dadu yg sama, cukup ganti dadu yg paling beda
+        for (var i = 0; i < dices.length; i++) {
+            counter += countStep(dices[i], duplicate)
+        }
+    } else {
+        //nah kalo gak ada yg sama, cek satu-satu
+
+    }
+
+    return counter
+}
+
+var diceSide = [2,4,4,2]
 var result = sameSideDice(diceSide)
 console.log(result)
