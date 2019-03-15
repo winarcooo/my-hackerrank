@@ -7,8 +7,7 @@ function minMaxSum(arr) {
     min = sum - Math.max(...arr)
     max = sum - Math.min(...arr)
 
-    console.log(min + "  " + max)
+    return(min + ' ' + max)
 }
 
-var arr = [1,2,3,4,5]
-minMaxSum(arr)
+module.exports = minMaxSum;

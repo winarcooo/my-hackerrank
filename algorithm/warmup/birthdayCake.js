@@ -9,6 +9,4 @@ function birthdayCake(ar) {
     return result.length
 }
 
-var ar = [2,7,1,5]
-var result = birthdayCake(ar)
-console.log(result)
+module.exports = birthdayCake;

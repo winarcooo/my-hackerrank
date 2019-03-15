@@ -13,6 +13,4 @@ function stairCase(n) {
     }
 }
 
-n = 4
-var result = stairCase(n)
-console.log(result)
+module.exports = stairCase;

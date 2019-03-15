@@ -13,3 +13,5 @@ function diagonalDifference(arr) {
 
     return Math.abs(ld - rd)
 }
+
+module.exports = diagonalDifference;

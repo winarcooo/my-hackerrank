@@ -18,6 +18,4 @@ function timeConversion(time) {
     }
 }
 
-var time = '06:40:03AM'
-var result = timeConversion(time)
-console.log(result)
+module.exports = timeConversion;
