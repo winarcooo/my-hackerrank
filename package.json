@@ -1,8 +1,14 @@
 {
-  "scripts": {
-    "test": "jest"
-  },
+  "name": "my-hackerrank",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/winarcooo/my-hackerrank.git",
+  "author": "Andy Winarko <winarcooo@gmail.com>",
+  "license": "MIT",
   "devDependencies": {
     "jest": "^24.5.0"
+  },
+  "scripts": {
+    "test": "jest"
   }
 }
