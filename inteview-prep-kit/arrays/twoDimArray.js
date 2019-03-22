@@ -5,15 +5,16 @@ function twoDimArray(arr) {
         for (var i = 0; i < arr.length-2; i++) {
             // then we loop horizontally
             for (var j = 0; j < arr.length-2; j++) {
+                // sum of single hourglass
                 sum = arr[i][j] + arr[i][j+1] + arr[i][j+2] + 
                         arr[i+1][j+1] +
                         arr[i+2][j] + arr[i+2][j+1] + arr[i+2][j+2]
-                
+                // push every hourglass sum to new array
                 sumOfHourglass.push(sum)
             }
         }
     
-
+    // return the highest sum
     return Math.max(...sumOfHourglass)
 }
 
