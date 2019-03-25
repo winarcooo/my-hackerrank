@@ -26,4 +26,3 @@ var array1 = [4,3,1,2]
 var array2 = [1,3,5,2,4,6,7] 
 var results = minSwapTwo(array2)
 console.log(results)
-
