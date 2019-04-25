@@ -1,0 +1,2 @@
+I'm a simple man who always curious in many fields such as computer science, physics, environments and religion. I'm a fun guy in a team, make friend with everyone and likes to think rationally.
+I start my career as a sofware engineer in Detik.com, using PHP and a bit angular as a daily tools. And now, in Pricebook.co.id i'm using Golang and PHP. In freetime i'm using NodeJS, Golang, React as a learning purpose.
