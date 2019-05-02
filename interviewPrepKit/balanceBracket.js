@@ -1,2 +1,21 @@
-I'm a simple man who always curious in many fields such as computer science, physics, environments and religion. I'm a fun guy in a team, make friend with everyone and likes to think rationally.
-I start my career as a sofware engineer in Detik.com, using PHP and a bit angular as a daily tools. And now, in Pricebook.co.id i'm using Golang and PHP. In freetime i'm using NodeJS, Golang, React as a learning purpose.
+let isMatchingBrackets = function (str) {
+  let stack = [];
+  let map = {
+      '(': ')',
+      '[': ']',
+      '{': '}'
+  }
+
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === '(' || str[i] === '{' || str[i] === '[' ) {
+      stack.push(str[i]);
+    }
+    else {
+      let last = stack.pop();
+      if (str[i] !== map[last]) {return false};
+    }
+  }
+  
+  if (stack.length !== 0) {return false};
+  return true;
+}
