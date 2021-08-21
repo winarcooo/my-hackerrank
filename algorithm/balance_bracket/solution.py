@@ -55,8 +55,8 @@ def isBalanced(string):
 
 
 if __name__ == '__main__':
-  input0 = "{(([])[])[]]}"
-  input1 = "{[()]}"
+  test1 = "{(([])[])[]]}"
+  test2 = "{[()]}"
 
-  result = isBalanced(input0)
+  result = isBalanced(test1)
   print(result)
